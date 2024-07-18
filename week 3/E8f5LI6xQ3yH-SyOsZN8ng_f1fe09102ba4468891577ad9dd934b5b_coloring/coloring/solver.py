@@ -83,3 +83,12 @@ if __name__ == '__main__':
         print('This test requires an input file.  Please select one from the data directory. (i.e. python solver.py ./data/gc_4_1)')
 
 
+
+
+
+
+
+
+
+
+
