@@ -10,7 +10,7 @@ def length(point1, point2):
 def greedy_sol(pts, n):
    
   res= [0]
-  all_points =  [ i for i in range (1,n)]
+  all_points =  [ pt for pt in range (1,n)]
   
   while len(res)<n:
      
@@ -19,11 +19,11 @@ def greedy_sol(pts, n):
      
      least_distance  =  float('inf')
      nearest_point = -1
-     for i in all_points:
-        curr_dist = length(pts[res[-1]],pts[i])
+     for node in all_points:
+        curr_dist = length(pts[res[-1]],pts[node])
         if curr_dist<least_distance:
            least_distance =  curr_dist
-           nearest_point =  i
+           nearest_point =  node
      res.append(nearest_point)
      all_points.remove(nearest_point)
 
